@@ -1,0 +1,78 @@
+10. Listar todos os atendimentos do estabelecimento Hospital Modelo, com os campos número do atendimento, nome do paciente, nome do médico, nome do convênio, data de entrada, tipo de atendimento e setor.
+
+
+SELECT 
+	AP.nr_atendimento,
+	PF.nm_pessoa_fisica,
+	MD.nm_guerra,
+	CV.ds_convenio,
+	AP.dt_entrada,
+	AP.ie_tipo_atendimento,
+	EM.nm_razao_social,
+	SA.ds_setor_atendimento
+FROM
+	atendimento_paciente AP, 
+	pessoa_fisica PF, --ok
+	convenio CV, --ok
+	atend_categoria_convenio CC, --ok
+	medico MD, --ok
+	empresa EM, --ok
+	estabelecimento ET, --ok
+	atend_paciente_unidade PU,---ok 
+	setor_atendimento SA --ok
+WHERE
+	AP.nr_atendimento = PU.nr_atendimento 
+	AND AP.cd_pessoa_fisica = PF.cd_pessoa_fisica 
+	AND MD.cd_pessoa_fisica = ap.cd_medico_resp 
+	AND PU.cd_setor_atendimento = SA.cd_setor_atendimento
+	AND CC.nr_atendimento = AP.nr_atendimento
+	AND CC.CD_CONVENIO = CV.CD_CONVENIO
+	AND ET.CD_ESTABELECIMENTO = AP.CD_ESTABELECIMENTO
+	AND ET.CD_EMPRESA = EM.CD_EMPRESA
+	AND AP.cd_estabelecimento = '1'
+
+
+---------------------------------------------------
+
+(CORRIGIR)   
+
+11. Listar todos os atendimentos do estabelecimento Hospital Modelo, com os campos número do atendimento, nome do paciente, nome do médico, nome do convênio, data de entrada, tipo de atendimento e setor. Trazer apenas setores de internação.
+
+
+SELECT 
+	AP.nr_atendimento,
+	PF.nm_pessoa_fisica,
+	MD.nm_guerra,
+	CV.ds_convenio,
+	AP.dt_entrada,
+	AP.ie_tipo_atendimento,
+	EM.nm_razao_social,
+	SA.ds_setor_atendimento
+FROM
+	atendimento_paciente AP, 
+	pessoa_fisica PF, --ok
+	convenio CV, --ok
+	atend_categoria_convenio CC, --ok
+	medico MD, --ok
+	empresa EM, --ok
+	estabelecimento ET, --ok
+	atend_paciente_unidade PU,---ok 
+	setor_atendimento SA --ok
+WHERE
+	AP.nr_atendimento = PU.nr_atendimento 
+	AND AP.cd_pessoa_fisica = PF.cd_pessoa_fisica 
+	AND MD.cd_pessoa_fisica = ap.cd_medico_resp 
+	AND PU.cd_setor_atendimento = SA.cd_setor_atendimento
+	AND CC.nr_atendimento = AP.nr_atendimento
+	AND CC.CD_CONVENIO = CV.CD_CONVENIO
+	AND ET.CD_ESTABELECIMENTO = AP.CD_ESTABELECIMENTO
+	AND ET.CD_EMPRESA = EM.CD_EMPRESA
+	AND AP.cd_estabelecimento = '1'
+	AND SA.ds_setor_atendimento = 'Internação A1'
+	AND SA.ds_setor_atendimento = 'Internação B1'
+
+
+    
+    
+
+
