@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-29T16:05:30.809Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="v21nh6EuDzeP5tq5MrOJ" version="21.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-29T16:06:10.560Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="m-UQrm00o4FVmiw92Axn" version="21.5.2" type="github">
   <diagram name="Página-1" id="GCsZ6mDVFPROjNfrWGLy">
     <mxGraphModel dx="1332" dy="486" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -165,7 +165,8 @@
             <mxPoint x="560" y="335" as="targetPoint" />
             <Array as="points">
               <mxPoint x="370" y="185" />
-              <mxPoint x="370" y="335" />
+              <mxPoint x="370" y="330" />
+              <mxPoint x="560" y="330" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -333,8 +334,8 @@
         <mxCell id="WdVWcIPc1ajt7B3F3fUs-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Yn1ilcEAV0hGk6iRwhf2-85" target="Yn1ilcEAV0hGk6iRwhf2-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="455" y="505" />
-              <mxPoint x="455" y="155" />
+              <mxPoint x="440" y="505" />
+              <mxPoint x="440" y="150" />
             </Array>
           </mxGeometry>
         </mxCell>
