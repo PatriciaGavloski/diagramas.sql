@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-30T16:04:31.440Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="OwWd4VLLMjgWac7NIqTx" version="22.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-30T16:22:06.292Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="9Dbfg1NVYGZnS6IRss4W" version="22.1.5" type="github">
   <diagram name="Página-1" id="EjnREG-DawdtXEW6NhZn">
     <mxGraphModel dx="875" dy="464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -46,8 +46,8 @@
         <mxCell id="xXd7aIl-I5N-2QVRSM6e-13" value="Extrair dados estruturados: Informações da agenda do dia&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="80.63" y="480" width="190" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="xXd7aIl-I5N-2QVRSM6e-15" value="&lt;h1&gt;Extrair dados Estruturados&amp;nbsp;&lt;/h1&gt;&lt;p&gt;Salvar colunas em um arquivo:&lt;/p&gt;&lt;p&gt;Paciente&amp;nbsp;&lt;br&gt;Status &lt;br&gt;Procedimento&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="350" y="480" width="281" height="160" as="geometry" />
+        <mxCell id="xXd7aIl-I5N-2QVRSM6e-15" value="&lt;h1&gt;Extrair dados Estruturados&amp;nbsp;&lt;/h1&gt;&lt;p&gt;Salvar colunas em um arquivo:&lt;/p&gt;&lt;p&gt;Paciente&amp;nbsp;&lt;br&gt;Status &lt;br&gt;Procedimento&lt;br&gt;Telefone&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="480" width="290" height="190" as="geometry" />
         </mxCell>
         <mxCell id="xXd7aIl-I5N-2QVRSM6e-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xXd7aIl-I5N-2QVRSM6e-17" target="xXd7aIl-I5N-2QVRSM6e-20">
           <mxGeometry relative="1" as="geometry" />
@@ -61,8 +61,20 @@
             <mxPoint x="340" y="550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="xXd7aIl-I5N-2QVRSM6e-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xXd7aIl-I5N-2QVRSM6e-20" target="xXd7aIl-I5N-2QVRSM6e-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="xXd7aIl-I5N-2QVRSM6e-20" value="Ler Tabela" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="118.44" y="680" width="114.37" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xXd7aIl-I5N-2QVRSM6e-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xXd7aIl-I5N-2QVRSM6e-22" target="xXd7aIl-I5N-2QVRSM6e-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xXd7aIl-I5N-2QVRSM6e-22" value="Para cada linha" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="115.63" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xXd7aIl-I5N-2QVRSM6e-24" value="If Status is Equal to &#39;EXECUTADO&#39; Then" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="45" y="880" width="260" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
